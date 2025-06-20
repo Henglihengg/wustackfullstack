@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Contact wustackfullstack LLC for web development services">
+		<title>Wustackfullstack LLC | Contact</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/styles.css" />
+		<style>
+			/* 自定义联系页面样式 */
+			.contact-container {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 40px;
+			}
+
+			@media (max-width: 768px) {
+				.contact-container {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			.card {
+				background-color: white;
+				border-radius: 8px;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+				margin-bottom: 30px;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+
+			.card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+			}
+
+			.card-title {
+				font-size: 1.5rem;
+				margin-bottom: 20px;
+				color: var(--primary);
+				position: relative;
+				padding-bottom: 10px;
+			}
+
+			.card-title::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 50px;
+				height: 3px;
+				background-color: var(--accent);
+			}
+
+			.contact-details {
+				display: flex;
+				flex-direction: column;
+				gap: 25px;
+			}
+
+			.contact-item {
+				display: flex;
+				gap: 20px;
+			}
+
+			.contact-icon {
+				min-width: 50px;
+				height: 50px;
+				background-color: rgba(37, 99, 235, 0.1);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: var(--primary);
+				font-size: 1.2rem;
+			}
+
+			.contact-content h4 {
+				font-size: 1.2rem;
+				margin-bottom: 5px;
+				color: var(--secondary);
+			}
+
+			.contact-content p {
+				margin-bottom: 8px;
+				color: #475569;
+			}
+
+			.social-links {
+				display: flex;
+				gap: 15px;
+			}
+
+			.social-link {
+				width: 45px;
+				height: 45px;
+				background-color: rgba(37, 99, 235, 0.1);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: var(--primary);
+				font-size: 1.2rem;
+				transition: all 0.3s ease;
+			}
+
+			.social-link:hover {
+				background-color: var(--primary);
+				color: white;
+				transform: translateY(-3px);
+			}
+
+			.map-container {
+				border-radius: 8px;
+				overflow: hidden;
+				height: 300px;
+			}
+
+			.form-group label {
+				display: block;
+				margin-bottom: 8px;
+				font-weight: 500;
+				color: var(--secondary);
+			}
+
+			.form-control {
+				border: 1px solid #e2e8f0;
+				padding: 12px 15px;
+				border-radius: 6px;
+				width: 100%;
+				transition: border-color 0.3s ease, box-shadow 0.3s ease;
+			}
+
+			.form-control:focus {
+				border-color: var(--primary);
+				box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+				outline: none;
+			}
+
+			.btn {
+				background-color: var(--primary);
+				color: white;
+				border: none;
+				padding: 12px 25px;
+				border-radius: 6px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.btn:hover {
+				background-color: #1d4ed8;
+				transform: translateY(-2px);
+			}
+
+			.mr-2 {
+				margin-right: 10px;
+			}
+
+			.mt-4 {
+				margin-top: 20px;
+			}
+
+			.mb-5 {
+				margin-bottom: 50px;
+			}
+			.about-container {
+                align-items: flex-start; 
+            }
+            
+            .about-img {
+                margin-top: 20px; 
+            }
+            
+            @media (max-width: 768px) {
+                .about-container {
+                    flex-direction: column;
+                }
+                
+                .about-img {
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                }
+            }
+			.card{
+				padding: 11px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="container header-container">
+				<a href="index.html" class="logo">wustack<span>fullstack</span></a>
+				<nav>
+					<ul class="nav-menu">
+						<li><a href="./index.html" class="nav-link ">Home</a></li>
+						<li><a href="services.html#services" class="nav-link">Services</a></li>
+						<li><a href="about.html#about" class="nav-link">About</a></li>
+						<li><a href="contact.html#contact" class="nav-link active">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="hamburger">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<!-- Contact Page -->
+		<section id="contact" class="section">
+			<div class="container">
+				<h2 class="section-title" style="margin-top: 50px;">Get In Touch</h2>
+				<p class="section-subtitle">Have questions or ready to start your project? Reach out to our team and
+					we'll get back to you as soon as possible.</p>
+
+				<div class="contact-container">
+					<div class="contact-left">
+						<div class="card">
+							<h3 class="card-title">Send Us a Message</h3>
+							<form id="contact-form">
+								<div class="form-group">
+									<label for="name">Your Name</label>
+									<input type="text" id="name" class="form-control" placeholder="Enter your full name"
+										required>
+								</div>
+
+								<div class="form-group">
+									<label for="email">Email Address</label>
+									<input type="email" id="email" class="form-control"
+										placeholder="Enter your email address" required>
+								</div>
+
+								<div class="form-group">
+									<label for="subject">Subject</label>
+									<input type="text" id="subject" class="form-control"
+										placeholder="Enter the subject of your message">
+								</div>
+
+								<div class="form-group">
+									<label for="message">Your Message</label>
+									<textarea id="message" class="form-control" rows="5"
+										placeholder="Type your message here..." required></textarea>
+								</div>
+
+								<button type="submit" class="btn">
+									<i class="fa fa-paper-plane mr-2"></i> Send Message
+								</button>
+							</form>
+						</div>
+					</div>
+
+					<div class="contact-right">
+						<!-- Contact Information -->
+						<div class="card">
+							<h3 class="card-title">Contact Information</h3>
+							<div class="contact-details">
+								<div class="contact-item">
+									<div class="contact-icon">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<div class="contact-content">
+										<h4>Email Us</h4>
+										<p><a href="mailto:info@wustackfullstack.com"
+												class="text-primary">info@wustackfullstack.com</a> - General inquiries
+										</p>
+									</div>
+								</div>
+
+								<div class="contact-item">
+									<div class="contact-icon">
+										<i class="fa fa-phone"></i>
+									</div>
+									<div class="contact-content">
+										<h4>Call Us</h4>
+										<p><a href="tel:+15551234567" class="text-primary">+1 (267) 734-9115</a> - Main
+											line</p>
+									</div>
+								</div>
+
+								<div class="contact-item">
+									<div class="contact-icon">
+										<i class="fa fa-map-marker"></i>
+									</div>
+									<div class="contact-content">
+										<h4>Chat With Us</h4>
+										<p>Henglihengg</p>
+									</div>
+								</div>
+
+								<div class="contact-item">
+									<div class="contact-icon">
+										<i class="fa fa-clock-o"></i>
+									</div>
+									<div class="contact-content">
+										<h4>Business Hours  </h4>
+										<p>(All times are in Eastern Time)</p>
+										<p>Monday–Friday: 9:00 AM – 6:00 PM  </p>
+										<p>Saturday: 10:00 AM – 2:00 PM (By appointment only)  </p>
+										<p>Sunday: Closed</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="footer-container">
+					<div>
+						<h3 class="footer-title">WuStack FullStack Solution Master LLC</h3>
+						<p style="color: #cbd5e1; margin-bottom: 20px;">Full-stack development and tech consulting
+							services for businesses of all sizes.</p>
+						<p style="color: #94a3b8;">© 2025 WuStack FullStack Solution Master LLC. All rights reserved.</p>
+					</div>
+
+					<div>
+						<h3 class="footer-title">Quick Links</h3>
+						<ul class="footer-links">
+							<li><a href="index.html#home" class="footer-link">Home</a></li>
+							<li><a href="services.html#services" class="footer-link">Services</a></li>
+							<li><a href="about.html#about" class="footer-link">About</a></li>
+							<li><a href="#contact" class="footer-link">Contact</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="footer-title">Services</h3>
+						<ul class="footer-links">
+							<li><a href="#" class="footer-link">Frontend Development</a></li>
+							<li><a href="#" class="footer-link">Backend Development</a></li>
+							<li><a href="#" class="footer-link">Full-Stack Solutions</a></li>
+							<li><a href="#" class="footer-link">Tech Consulting</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="footer-title">Connect</h3>
+						<ul class="footer-links">
+							<li><a href="#" class="footer-link">Email: info@wustackfullstack.com</a></li>
+							<li><a href="#" class="footer-link">Telephone:+1 (267) 734-9115</a></li>
+							<li><a href="#" class="footer-link">Wechat:Henglihengg</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<p class="copyright">Designed and developed with ❤️ by wustackfullstack LLC</p>
+			</div>
+		</footer>
+
+		<script>
+			// Mobile Navigation
+			const hamburger = document.querySelector('.hamburger');
+			const navMenu = document.querySelector('.nav-menu');
+
+			hamburger.addEventListener('click', () => {
+				navMenu.classList.toggle('active');
+			});
+
+			// Close menu when clicking a link
+			const navLinks = document.querySelectorAll('.nav-link');
+			navLinks.forEach(link => {
+				link.addEventListener('click', () => {
+					navMenu.classList.remove('active');
+				});
+			});
+
+			// Smooth scrolling for anchor links
+			document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function(e) {
+					e.preventDefault();
+
+					const target = document.querySelector(this.getAttribute('href'));
+					if (target) {
+						window.scrollTo({
+							top: target.offsetTop - 80,
+							behavior: 'smooth'
+						});
+					}
+				});
+			});
+
+			// Update active link based on scroll position
+			window.addEventListener('scroll', () => {
+				const sections = document.querySelectorAll('section');
+				const navLinks = document.querySelectorAll('.nav-link');
+
+				let current = '';
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.clientHeight;
+					if (pageYOffset >= (sectionTop - 100)) {
+						current = section.getAttribute('id');
+					}
+				});
+
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href').substring(1) === current) {
+						link.classList.add('active');
+					}
+				});
+			});
+
+			// Form submission handling
+			const contactForm = document.getElementById('contact-form');
+			if (contactForm) {
+				contactForm.addEventListener('submit', function(e) {
+					e.preventDefault();
+					const formData = new FormData(this);
+					const formValues = Object.fromEntries(formData.entries());
+					alert('Thank you for your message! We will get back to you soon.');
+					this.reset();
+				});
+			}
+		</script>
+	</body>
+</html>
