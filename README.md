@@ -31,8 +31,10 @@ While the core purpose of the site is communication and outreach, it also reflec
 ## 📁 Site Structure
 
 - **Home**: Overview of the business and what we do.
+- 
 ![image](https://github.com/user-attachments/assets/6d2ffe24-a595-41a2-9a3e-fa689d4e9a8b)
 - **Services**: Describes key offerings in frontend, backend, and full-stack development.
+- 
 ![image](https://github.com/user-attachments/assets/e5fc9358-8191-4498-9092-cf51fb06b4de)
 
 - **About Me**: Introduces the founder and background.
