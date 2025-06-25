@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6d2ffe24-a595-41a2-9a3e-fa689d4e9a8b)# Wustack Fullstack Official Website
+# Wustack Fullstack Official Website
 
 This is the official website for **Wustack Fullstack Solution Master LLC**, a U.S.-based technology company founded and operated by Shixi Wu under F-1 OPT status. The site presents the company's services, mission, and contact information in a clear, professional, and mobile-responsive format.
 
@@ -31,20 +31,21 @@ While the core purpose of the site is communication and outreach, it also reflec
 ## 📁 Site Structure
 
 - **Home**: Overview of the business and what we do.
-
+![image](https://github.com/user-attachments/assets/6d2ffe24-a595-41a2-9a3e-fa689d4e9a8b)
 - **Services**: Describes key offerings in frontend, backend, and full-stack development.
-
-
-
+![image](https://github.com/user-attachments/assets/e5fc9358-8191-4498-9092-cf51fb06b4de)
 
 - **About Me**: Introduces the founder and background.
 
+![image](https://github.com/user-attachments/assets/5cff7f7b-84bb-4cc0-b9b6-edcb0b980ba7)
+
 - **Contact**: Direct channels for inquiries, including email and social media links.
 
-
-
+![image](https://github.com/user-attachments/assets/9dc8e78f-f17a-4496-9bf5-ef9c6a64ecab)
 
 - **Footer**: Includes quick navigation links, company information, and copyright.
+
+![image](https://github.com/user-attachments/assets/cd611d8b-86af-4e59-b0c4-9cad447daa8a)
 
 
 ## 🧾 Legal Note
